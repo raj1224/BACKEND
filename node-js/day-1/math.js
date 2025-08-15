@@ -12,5 +12,6 @@ function Sub(a,b){
 module.exports = {
     AddFunc:Add,
     SubFunc:Sub
-}
+}// ye nhi likha to {} return hoga
+
 

@@ -1,1 +1,1 @@
-hello world i am async code
+sync code

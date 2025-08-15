@@ -1,17 +1,17 @@
 const fs = require("fs")
-const os = require("os")
+// const os = require("os")
 
 
-console.log(os.cpus().length)
+// console.log(os.cpus().length)
 
 
 // sync Blocking code , async non blockign code
 
 // *write
 
-//? fs.writeFileSync("./text.txt" , "Hey World this is sync writing")
+//? fs.writeFileSync("./text.txt" , "Hey World this is sync writing") // file ni hoti to vo create kr deta.
 
-//? fs.writeFile("./test.txt" , "hello world i am async code" , (err)=>{
+//  fs.writeFile("./test.txt" , "hello world i am async code" , (err)=>{
 //     console.log(err)
 // })
 
@@ -34,14 +34,14 @@ console.log(os.cpus().length)
 
 // fs.appendFileSync("./text.txt" , new Date().toDateString())
 
-fs.appendFile("./log.txt" , `Hello world this is suraj and logged in at ${new Date().toDateString()}\n` , (err , res)=>{
-    if(err){
-        console.log(err)
-    }
-    else{
-        console.log(res)
-    }
-})
+// fs.appendFile("./log.txt" , `Hello world this is suraj and logged in at ${new Date().toDateString()}\n` , (err , res)=>{
+//     if(err){
+//         console.log(err)
+//     }
+//     else{
+//         console.log(res)
+//     }
+// })
 
 
 //* 1. cpSync
