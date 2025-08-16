@@ -2,6 +2,8 @@ const path = require("path");
 
 console.log("FILENAME📂" , __filename)
 console.log("DIRNAME📂" , __dirname)
+// ! hum abhi commonjs use kr rhe h 
+// ! module js me alg tarike se use hoti h
 
 
 // School management system

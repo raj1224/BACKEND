@@ -1,18 +1,13 @@
-// const fs = require("fs")
+// console.log(global);
+// console.log(Object.getOwnPropertyNames(global));
 
-// console.log(__dirname , __filename)
-
-// fs.writeFile("write.txt" , "Hello world this is suraj" , (err,res )=>{
-//     if(err){
-//         console.log(err)
-//     }
-// })
-
+// SETTIMEOUT
 // setTimeout(()=>{
 
 //     console.log("hello i am from global")
 // },2000)
 
+// SETINTERVEL
 // let count = 0;
 
 // const interval = setInterval(()=>{
@@ -23,6 +18,25 @@
 //     }
 // },1000)
 
-console.log("Hello")
-let suraj = "oidwehfiowe"
+const fs = require("fs")
+
+console.log(__dirname , __filename)
+
+fs.writeFile("write.txt" , "Hello world this is suraj" , (err,res )=>{
+    if(err){
+        console.log(err)
+    }
+})
+
+
+
+
+
+// console.log("Hello")
+// let suraj = "oidwehfiowe" // top level code 
+
+
+function n(){
+
+}//function top level code h pr func ke andr ki chije nhi h.
 

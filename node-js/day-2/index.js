@@ -1,25 +1,45 @@
 // Create a server
+// const http = require('http');
+// const PORT = 3000; //! Kbhi bhi apne port ko dikhate ni h hum use enviromental enviroment me rakhte h.
+
+// // Create an HTTP server
+// const server = http.createServer((req, res) => {
+//   console.log(req);
+
+//   // Send response body
+//   res.end('Hello, World!');
+// });
+
+// // Listen on port 3000
+// server.listen(PORT, () => {
+//   console.log('Server running at http://localhost:3000/');
+// });
+
+// ! code ko jitna kb synchronous likhenge utna hi fast chalega.
+
+// ASSIGNMENT :- CREATING LOG FILE USING FS 
+
 const http = require('http');
-const PORT = 3000; //! Kbhi bhi apne port ko dikhate ni h hum use enviromental enviroment me rakhte h.
+const fs = require('fs');
+const PORT = 3000; 
 
-// Create an HTTP server
 const server = http.createServer((req, res) => {
-  // Set response header
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
 
-  console.log(req);
-  
+  const log = `${Date.now()}: & from ${req.url} New request received \n`;
 
-  // Send response body
-  res.end('Hello, World!');
+  fs.appendFile('log.txt',log,(err)=>{
+    if(err){
+      console.log('Error writing to the log file:', err);
+      res.statusCode=500;
+      res.end('internal server Error')
+      return;
+    }
+    res.end('hello world from server')
+  })
 });
-
-// Listen on port 3000
 server.listen(PORT, () => {
   console.log('Server running at http://localhost:3000/');
 });
-
-// ! code ko jitna kb synchronous likhenge utna hi fast chalega.
 
 // const fs = require("fs");
 // const crypto = require("crypto");
