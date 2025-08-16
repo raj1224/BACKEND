@@ -5,12 +5,15 @@ const randomvalues = crypto.randomBytes(100);
 
 console.log(randomvalues.toString("hex"))
 
+// ! programs runs always on ram.
+
 
 // 2. createHash
 
-// const hashvalue = crypto.createHash("sha256").update("Suraj").digest("hex")
+const hashvalue = crypto.createHash("sha256").update("Suraj").digest("hex")
+console.log(hashvalue);
 
-// const inputValue = "Surajs"
+// const inputValue = "Suraj"
 // const matchValue = crypto.createHash("sha256").update(inputValue).digest("hex")
 
 
@@ -21,5 +24,5 @@ console.log(randomvalues.toString("hex"))
 //     console.log("Something went wrong")
 // }
 
-// *encryption and decryption
+// *encryption and decryption Assignment read about them.
 
