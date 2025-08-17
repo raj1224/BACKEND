@@ -13,6 +13,9 @@ app.get("/", (req, res) => {
 
 // Industry Standards
 app.get("/api/v1/users", (req, res) => {
+  // console.log(req.query);
+  
+  // destructuring query parameter of name
   const { name } = req.query;
 
   if (name) {
@@ -31,7 +34,7 @@ app.get("/api/v1/users/:id", (req, res) => {
   const { id } = req.params;
   const parsedId = parseInt(id);
 
-  const user = userData.find((user) => user.id === parsedId);
+  const user = userData.find((user)=> user.id === parsedId);
 
   res.status(200).send(user);
 });
@@ -61,9 +64,9 @@ app.put("/api/v1/users/:id", (req, res) => {
   const {
     body,
     params: { id },
-
-    
   } = req;
+  // console.log(req.params,req.body);
+  
 
   const parsedId = parseInt(id);
   const userIndex = userData.findIndex((user)=>user.id === parsedId);
