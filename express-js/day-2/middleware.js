@@ -8,11 +8,13 @@ console.log("Hi I am middleware👋");
 next();
 }
 
-// app.use(SayHiMiddleware);
+// app.use(SayHiMiddleware); // global middle ware
+//  // uses when u want to use it every route
 
 
 app.get("/",SayHiMiddleware ,  (req, res) => {
-    res.send("Hello World");
+    res.send("Hello World"); // specific route middleware
+     // this is use when we use middleware for only this routes only.
 });
 
 app.get("/users", (req, res) => {
