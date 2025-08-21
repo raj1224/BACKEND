@@ -22,7 +22,14 @@ INSERT INTO student (rollno, name, marks, grade, city) VALUES
 (9, 'Vikram Malhotra', 55, 'D', 'Bangalore'),
 (10, 'Sneha Roy', 89, 'A', 'Lucknow');
 
-
+# Distinct unique values hi deta h bs.
 SELECT DISTINCT city FROM student;
 
 SELECT * FROM student WHERE MARKS > 80 AND CITY = "Delhi"; 
+
+# SELECT rollno, name, marks FROM student;
+# SELECT * FROM student;
+
+SELECT  * FROM student WHERE grade= 'A';
+
+SELECT * FROM student LIMIT 5;
