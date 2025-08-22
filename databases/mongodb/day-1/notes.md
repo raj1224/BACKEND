@@ -95,6 +95,12 @@ MongoDB Atlas is a fully-managed cloud service that hosts MongoDB. It provides a
 
 ### **Creating and Deleting Databases**
 ```javascript
+// show databases
+show dbs;
+
+// clear
+cls;
+
 // Create or switch to a database
 use myDatabase;
 

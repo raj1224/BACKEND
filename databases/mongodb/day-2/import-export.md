@@ -76,6 +76,7 @@ By default, `mongoexport` exports data in JSON format. If you want to export in 
 ### Example with CSV Format:
 
 ```sh
+// try this
 mongoexport --db shop --collection products --type=csv --out exported_products.csv
 ```
 
