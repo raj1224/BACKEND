@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Rahul Sharma",
+    "hobbies": ["cricket", "reading", "traveling"],
+    "identity": { "hasAadhar": true, "hasPanCard": false },
+    "bio": "A computer science student who loves coding and open-source.",
+    "age": 22,
+    "experience": [
+      { "company": "Google", "duration": "6 months", "neglect": false },
+      { "company": "Infosys", "duration": "1 year", "neglect": false }
+    ]
+  },
+  {
+    "name": "Priya Verma",
+    "hobbies": ["painting", "music"],
+    "identity": { "hasAadhar": true, "hasPanCard": true },
+    "bio": "Creative student with passion for arts and UI/UX design.",
+    "age": 21,
+    "experience": [
+      { "company": "Adobe", "duration": "3 months", "neglect": false }
+    ]
+  },
+  {
+    "name": "Aman Gupta",
+    "hobbies": ["gaming", "cycling", "football"],
+    "identity": { "hasAadhar": true, "hasPanCard": false },
+    "bio": "Passionate gamer and backend developer enthusiast.",
+    "age": 23,
+    "experience": [
+      { "company": "TCS", "duration": "1 year", "neglect": true }
+    ]
+  },
+  {
+    "name": "Sneha Iyer",
+    "hobbies": ["yoga", "reading novels"],
+    "identity": { "hasAadhar": true, "hasPanCard": true },
+    "bio": "Focused on AI and deep learning research.",
+    "age": 24,
+    "experience": [
+      { "company": "Microsoft", "duration": "8 months", "neglect": false }
+    ]
+  },
+  {
+    "name": "Vikram Singh",
+    "hobbies": ["football", "traveling"],
+    "identity": { "hasAadhar": true, "hasPanCard": true },
+    "bio": "A sports enthusiast who codes in free time.",
+    "age": 22,
+    "experience": [
+      { "company": "Amazon", "duration": "1.5 years", "neglect": false }
+    ]
+  },
+  {
+    "name": "Ananya Das",
+    "hobbies": ["singing", "blogging"],
+    "identity": { "hasAadhar": true, "hasPanCard": false },
+    "bio": "Writer and aspiring data analyst.",
+    "age": 20,
+    "experience": [
+      { "company": "Zomato", "duration": "4 months", "neglect": true }
+    ]
+  },
+  {
+    "name": "Rohit Mehta",
+    "hobbies": ["chess", "cooking"],
+    "identity": { "hasAadhar": true, "hasPanCard": true },
+    "bio": "Interested in finance and full-stack web development.",
+    "age": 25,
+    "experience": [
+      { "company": "Wipro", "duration": "2 years", "neglect": false }
+    ]
+  },
+  {
+    "name": "Kavya Reddy",
+    "hobbies": ["swimming", "volunteering"],
+    "identity": { "hasAadhar": false, "hasPanCard": true },
+    "bio": "Biotech student exploring programming.",
+    "age": 23,
+    "experience": [
+      { "company": "CureFit", "duration": "5 months", "neglect": true }
+    ]
+  },
+  {
+    "name": "Arjun Nair",
+    "hobbies": ["photography", "cycling"],
+    "identity": { "hasAadhar": true, "hasPanCard": true },
+    "bio": "Cloud computing and DevOps enthusiast.",
+    "age": 24,
+    "experience": [
+      { "company": "Flipkart", "duration": "1 year", "neglect": false }
+    ]
+  },
+  {
+    "name": "Meera Kapoor",
+    "hobbies": ["dancing", "sketching"],
+    "identity": { "hasAadhar": true, "hasPanCard": false },
+    "bio": "UI/UX designer in the making.",
+    "age": 21,
+    "experience": [
+      { "company": "Byju's", "duration": "7 months", "neglect": true }
+    ]
+  }
+]
